@@ -33,7 +33,7 @@ public class PrintingLCS {
 		StringBuilder sb = new StringBuilder();
 		int i = dp.length-1;
 		int j =dp[0].length-1;
-		while(i>=1 || j>=1) {
+		while(i>=1 && j>=1) {
 			if(s1.charAt(i-1)==s2.charAt(j-1)) {
 				sb.append(s1.charAt(i-1));
 				i--;
